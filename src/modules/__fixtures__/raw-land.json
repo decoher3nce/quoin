@@ -1,0 +1,28 @@
+{
+  "id": "raw-land",
+  "inputs": {
+    "purchasePrice": 90000,
+    "acres": 5,
+    "closingCostPct": 0.02,
+    "financedPct": 0,
+    "interestRate": 0.09,
+    "loanTermYears": 15,
+    "propertyTaxPct": 0.008,
+    "annualMaintenance": 400,
+    "annualInsurance": 200,
+    "appreciationPct": 0.04,
+    "holdYears": 5,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": -1320,
+    "monthlyCashFlow": -110,
+    "cashOnCash": -0.01437908496732026,
+    "capRate": -0.014666666666666666,
+    "dscr": null,
+    "irr5yr": 0.006548027159052829,
+    "totalCashInvested": 91800,
+    "pricePerAcre": 18000,
+    "breakEvenAppreciation": 0.03351818108716076
+  }
+}

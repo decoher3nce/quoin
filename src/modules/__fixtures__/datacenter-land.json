@@ -1,0 +1,26 @@
+{
+  "id": "datacenter-land",
+  "inputs": {
+    "landPurchasePrice": 1500000,
+    "acres": 50,
+    "groundLeaseAnnualIfLeased": 90000,
+    "escalationPct": 0.025,
+    "leaseTermYears": 20,
+    "powerEntitlementAppreciationPct": 0.1,
+    "discountRate": 0.1,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 90000,
+    "monthlyCashFlow": 7500,
+    "cashOnCash": 0.06,
+    "capRate": 0.06,
+    "dscr": null,
+    "irr5yr": 0.14245372375691204,
+    "totalCashInvested": 1500000,
+    "yieldOnCost": 0.06,
+    "pricePerAcre": 30000,
+    "npvOfLease": -282162.352648766
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "glamping-rv",
+  "inputs": {
+    "landCost": 250000,
+    "numberOfSites": 20,
+    "siteDevelopmentCostPerSite": 30000,
+    "financedPct": 0.6,
+    "interestRate": 0.085,
+    "loanTermYears": 20,
+    "avgNightlyRatePerSite": 120,
+    "annualizedOccupancy": 0.32,
+    "opexRatioOfRevenue": 0.52,
+    "amenitiesFixedCostAnnual": 30000,
+    "revGrowthPct": 0.03,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": 51442.81811802932,
+    "monthlyCashFlow": 4286.901509835777,
+    "cashOnCash": 0.151302406229498,
+    "capRate": 0.12300423529411765,
+    "dscr": 1.9685946298503358,
+    "irr5yr": 0.2153118123411788,
+    "totalCashInvested": 340000,
+    "revPASN": 38.4,
+    "pricePerSite": 42500,
+    "breakEvenOccupancy": 0.1976569203813991
+  }
+}

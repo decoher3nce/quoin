@@ -1,0 +1,35 @@
+{
+  "id": "wildfire-hardened-arb",
+  "inputs": {
+    "purchasePrice": 360000,
+    "hardeningRetrofitCost": 55000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.075,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "monthlyRent": 2600,
+    "rentPremiumFromInsurabilityPct": 0.08,
+    "vacancyPct": 0.06,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.01,
+    "insuranceAnnual": 4200,
+    "maintenancePct": 0.08,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -4009.929277109957,
+    "monthlyCashFlow": -334.1607730924964,
+    "cashOnCash": -0.02573767186848496,
+    "capRate": 0.051790613333333325,
+    "dscr": 0.8229967373679352,
+    "irr5yr": -0.0446183160796373,
+    "totalCashInvested": 155800,
+    "yieldOnCost": 0.044926797108433725,
+    "insurabilityRentPremium": 0.08,
+    "retrofitPaybackYears": 22.03525641025641
+  }
+}

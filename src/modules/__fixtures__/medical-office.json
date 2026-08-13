@@ -1,0 +1,34 @@
+{
+  "id": "medical-office",
+  "inputs": {
+    "purchasePrice": 5000000,
+    "downPaymentPct": 0.35,
+    "interestRate": 0.071,
+    "loanTermYears": 25,
+    "closingCostPct": 0.02,
+    "rentableSqft": 32000,
+    "marketRentPerSqftAnnual": 26,
+    "currentOccupancy": 0.92,
+    "rentGrowthPct": 0.025,
+    "operatingExpensePerSqft": 9,
+    "managementPct": 0.04,
+    "annualRolloverPct": 0.1,
+    "tiLcPerSqft": 60,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.015,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": -23314.388050004025,
+    "monthlyCashFlow": -1942.8656708336687,
+    "cashOnCash": -0.012602371918921095,
+    "capRate": 0.050964480000000006,
+    "dscr": 0.9161765395600509,
+    "irr5yr": 0.030008179909459486,
+    "totalCashInvested": 1850000,
+    "pricePerSqft": 156.25,
+    "goingInCapRate": 0.050964480000000006,
+    "tiLcDragAnnual": 192000
+  }
+}

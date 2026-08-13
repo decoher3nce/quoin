@@ -1,0 +1,28 @@
+{
+  "id": "str-arbitrage",
+  "inputs": {
+    "monthlyLeaseCost": 2400,
+    "leaseTermYearsModeled": 3,
+    "securityDeposit": 4800,
+    "furnishingCost": 18000,
+    "adr": 180,
+    "occupancyPct": 0.65,
+    "platformFeePct": 0.03,
+    "utilitiesMonthly": 280,
+    "suppliesPct": 0.05,
+    "managementPct": 0,
+    "maintenancePct": 0.04
+  },
+  "expected": {
+    "annualCashFlow": 5420.399999999999,
+    "monthlyCashFlow": 451.6999999999999,
+    "cashOnCash": 0.21509523809523803,
+    "capRate": 0.21509523809523803,
+    "dscr": null,
+    "irr5yr": -0.0764757040314953,
+    "totalCashInvested": 25200,
+    "breakEvenOccupancy": 0.556247405562474,
+    "monthlyProfit": 451.6999999999999,
+    "capitalAtRisk": 25200
+  }
+}

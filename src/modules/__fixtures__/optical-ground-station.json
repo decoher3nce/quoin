@@ -1,0 +1,26 @@
+{
+  "id": "optical-ground-station",
+  "inputs": {
+    "acreage": 40,
+    "landCost": 180000,
+    "buildoutCost": 120000,
+    "annualLease": 60000,
+    "escalationPct": 0.02,
+    "leaseTermYears": 15,
+    "appreciationPct": 0.02,
+    "discountRate": 0.1,
+    "holdYears": 5
+  },
+  "expected": {
+    "annualCashFlow": 60000,
+    "monthlyCashFlow": 5000,
+    "cashOnCash": 0.2,
+    "capRate": 0.2,
+    "dscr": null,
+    "irr5yr": 0.15765588431251235,
+    "totalCashInvested": 300000,
+    "yieldOnCost": 0.2,
+    "npvOfLease": 251607.7924183602,
+    "leasePerAcre": 1500
+  }
+}

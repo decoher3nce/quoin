@@ -1,0 +1,29 @@
+{
+  "id": "condo-conversion",
+  "inputs": {
+    "acquisitionCost": 3000000,
+    "numberOfUnits": 20,
+    "conversionCostPerUnit": 45000,
+    "financedPct": 0.65,
+    "interestRate": 0.095,
+    "projectMonths": 20,
+    "monthlyCarry": 12000,
+    "avgCondoSalePrice": 260000,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": null,
+    "monthlyCashFlow": null,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": 0.11486372240480613,
+    "totalCashInvested": 2006375,
+    "profit": 398625,
+    "roi": 0.1986792100180674,
+    "annualizedRoi": 0.11486372240480613,
+    "marginOfSafety": 0.08069331983805669,
+    "upliftPerDoor": 65000,
+    "allInCostPerDoor": 195000
+  }
+}

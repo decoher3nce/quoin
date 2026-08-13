@@ -1,0 +1,23 @@
+{
+  "id": "large-multifamily-lp",
+  "inputs": {
+    "investmentAmount": 100000,
+    "holdYears": 5,
+    "cashDistributionPct": 0.05,
+    "preferredReturnPct": 0.08,
+    "projectedExitProfitPct": 0.55,
+    "lpProfitSplit": 0.7
+  },
+  "expected": {
+    "annualCashFlow": 5000,
+    "monthlyCashFlow": 416.6666666666667,
+    "cashOnCash": 0.05,
+    "capRate": 0.05,
+    "dscr": null,
+    "irr5yr": 0.1341730726824514,
+    "totalCashInvested": 100000,
+    "equityMultiple": 1.8,
+    "preferredReturn": 0.08,
+    "profitAtExit": 55000.00000000001
+  }
+}

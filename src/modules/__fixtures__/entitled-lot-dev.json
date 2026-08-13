@@ -1,0 +1,32 @@
+{
+  "id": "entitled-lot-dev",
+  "inputs": {
+    "landCost": 400000,
+    "acres": 20,
+    "lotsCreated": 40,
+    "entitlementCost": 350000,
+    "horizontalDevCostPerLot": 35000,
+    "financedPct": 0.55,
+    "interestRate": 0.1,
+    "projectMonths": 30,
+    "monthlyCarry": 4000,
+    "avgLotSalePrice": 85000,
+    "sellThroughPct": 1,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": null,
+    "monthlyCashFlow": null,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": 0.162080145165598,
+    "totalCashInvested": 1383125,
+    "profit": 630375,
+    "roi": 0.45576140985088115,
+    "annualizedRoi": 0.162080145165598,
+    "marginOfSafety": 0.19723873591989977,
+    "profitPerLot": 15759.375,
+    "costToCompletePerLot": 43750
+  }
+}

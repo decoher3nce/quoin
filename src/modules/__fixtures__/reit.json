@@ -1,0 +1,24 @@
+{
+  "id": "reit",
+  "inputs": {
+    "investmentAmount": 50000,
+    "dividendYield": 0.045,
+    "dividendGrowthPct": 0.03,
+    "expenseRatioAnnual": 0.005,
+    "priceAppreciationPct": 0.03,
+    "holdYears": 5,
+    "navPremiumDiscount": 0
+  },
+  "expected": {
+    "annualCashFlow": 2000,
+    "monthlyCashFlow": 166.66666666666666,
+    "cashOnCash": 0.04,
+    "capRate": 0.045,
+    "dscr": null,
+    "irr5yr": 0.07000000000000002,
+    "totalCashInvested": 50000,
+    "dividendYield": 0.045,
+    "totalReturnEstimate": 0.06999999999999999,
+    "navPremiumDiscount": 0
+  }
+}

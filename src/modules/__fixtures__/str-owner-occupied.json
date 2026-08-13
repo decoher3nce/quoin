@@ -1,0 +1,40 @@
+{
+  "id": "str-owner-occupied",
+  "inputs": {
+    "purchasePrice": 540000,
+    "downPaymentPct": 0.2,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "furnishingCost": 30000,
+    "reserveCash": 8000,
+    "personalUseNights": 90,
+    "adr": 240,
+    "occupancyOfAvailable": 0.6,
+    "platformFeePct": 0.03,
+    "revenueGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 2400,
+    "hoaMonthly": 0,
+    "utilitiesMonthly": 300,
+    "suppliesPct": 0.04,
+    "managementPct": 0.15,
+    "maintenancePct": 0.06,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -17917.281350088808,
+    "monthlyCashFlow": -1493.1067791740672,
+    "cashOnCash": -0.11046412669598525,
+    "capRate": 0.03068888888888889,
+    "dscr": 0.48049710957393804,
+    "irr5yr": -0.05715768679448237,
+    "totalCashInvested": 162200,
+    "breakEvenOccupancy": 0.9770471664580979,
+    "personalUseNights": 90,
+    "revPAN": 144
+  }
+}

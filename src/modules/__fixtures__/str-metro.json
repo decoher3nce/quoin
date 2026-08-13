@@ -1,0 +1,38 @@
+{
+  "id": "str-metro",
+  "inputs": {
+    "purchasePrice": 480000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.075,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "furnishingCost": 35000,
+    "reserveCash": 8000,
+    "adr": 220,
+    "occupancyPct": 0.62,
+    "platformFeePct": 0.03,
+    "revenueGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 2600,
+    "hoaMonthly": 0,
+    "utilitiesMonthly": 320,
+    "suppliesPct": 0.04,
+    "managementPct": 0.2,
+    "maintenancePct": 0.06,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -8569.44676947995,
+    "monthlyCashFlow": -714.1205641233291,
+    "cashOnCash": -0.04830578787756454,
+    "capRate": 0.04507629166666666,
+    "dscr": 0.7163004758322764,
+    "irr5yr": -0.01997712998969708,
+    "totalCashInvested": 177400,
+    "breakEvenOccupancy": 0.7792804365993188,
+    "revPAN": 136.4
+  }
+}

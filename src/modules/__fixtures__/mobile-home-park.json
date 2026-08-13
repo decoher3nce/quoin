@@ -1,0 +1,34 @@
+{
+  "id": "mobile-home-park",
+  "inputs": {
+    "purchasePrice": 2200000,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.073,
+    "loanTermYears": 25,
+    "closingCostPct": 0.02,
+    "totalPads": 90,
+    "occupiedPads": 80,
+    "padRentMonthly": 425,
+    "parkOwnedHomes": 12,
+    "homeRentPremiumMonthly": 350,
+    "collectionLossPct": 0.03,
+    "rentGrowthPct": 0.035,
+    "expenseRatioOfEgi": 0.38,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.025,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 141511.1752509375,
+    "monthlyCashFlow": 11792.597937578124,
+    "cashOnCash": 0.20101019211780893,
+    "capRate": 0.12530989090909092,
+    "dscr": 2.0547108780632057,
+    "irr5yr": 0.25356368763098835,
+    "totalCashInvested": 704000,
+    "pricePerPad": 24444.444444444445,
+    "occupancy": 0.8888888888888888,
+    "expenseRatio": 0.38
+  }
+}

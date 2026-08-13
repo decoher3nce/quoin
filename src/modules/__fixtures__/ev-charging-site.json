@@ -1,0 +1,26 @@
+{
+  "id": "ev-charging-site",
+  "inputs": {
+    "siteAcquisitionCost": 450000,
+    "numberOfStalls": 8,
+    "annualLeasePerStall": 4500,
+    "utilizationGrowthPct": 0.06,
+    "leaseTermYears": 15,
+    "appreciationPct": 0.03,
+    "discountRate": 0.09,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": 36000,
+    "monthlyCashFlow": 3000,
+    "cashOnCash": 0.08,
+    "capRate": 0.08,
+    "dscr": null,
+    "irr5yr": 0.10375009382357482,
+    "totalCashInvested": 450000,
+    "yieldOnCost": 0.08,
+    "revenuePerStall": 4500,
+    "npvOfLease": 83974.4436920035
+  }
+}

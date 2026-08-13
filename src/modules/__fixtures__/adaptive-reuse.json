@@ -1,0 +1,28 @@
+{
+  "id": "adaptive-reuse",
+  "inputs": {
+    "acquisitionCost": 2200000,
+    "buildingSqft": 24000,
+    "conversionCostPerSqft": 180,
+    "financedPct": 0.65,
+    "interestRate": 0.095,
+    "projectMonths": 24,
+    "monthlyCarry": 9000,
+    "stabilizedValue": 8400000,
+    "sellingCostPct": 0.04
+  },
+  "expected": {
+    "annualCashFlow": null,
+    "monthlyCashFlow": null,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": 0.07622662797410218,
+    "totalCashInvested": 3303220,
+    "profit": 522780,
+    "roi": 0.15826375476050641,
+    "annualizedRoi": 0.07622662797410218,
+    "marginOfSafety": 0.06482886904761904,
+    "costPerSqft": 271.6666666666667
+  }
+}

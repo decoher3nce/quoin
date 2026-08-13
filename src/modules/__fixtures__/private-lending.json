@@ -1,0 +1,25 @@
+{
+  "id": "private-lending",
+  "inputs": {
+    "loanAmount": 250000,
+    "noteRate": 0.11,
+    "pointsPct": 0.02,
+    "termMonths": 12,
+    "interestOnly": 1,
+    "ltv": 0.65,
+    "defaultProbability": 0.05,
+    "lossGivenDefaultPct": 0.25
+  },
+  "expected": {
+    "annualCashFlow": 32500,
+    "monthlyCashFlow": 2708.3333333333335,
+    "cashOnCash": 0.13,
+    "capRate": 0.11,
+    "dscr": null,
+    "irr5yr": 0.13000000000000014,
+    "totalCashInvested": 250000,
+    "contractualYield": 0.13,
+    "lossAdjustedYield": 0.128625,
+    "ltv": 0.65
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mortgage-notes",
+  "inputs": {
+    "unpaidPrincipalBalance": 180000,
+    "purchasePricePctOfUpb": 0.72,
+    "noteRate": 0.06,
+    "remainingTermMonths": 240,
+    "performing": 1,
+    "collateralPropertyValue": 230000
+  },
+  "expected": {
+    "annualCashFlow": 15474.91086312853,
+    "monthlyCashFlow": 1289.575905260711,
+    "cashOnCash": 0.1194051764130288,
+    "capRate": 0.1194051764130288,
+    "dscr": null,
+    "irr5yr": 0.1461793937970422,
+    "totalCashInvested": 129600,
+    "yieldToMaturity": 0.1461793937970422,
+    "discountToUpb": 0.28,
+    "collateralCoverage": 1.7746913580246915
+  }
+}

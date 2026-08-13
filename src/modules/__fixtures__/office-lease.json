@@ -1,0 +1,34 @@
+{
+  "id": "office-lease",
+  "inputs": {
+    "purchasePrice": 4500000,
+    "downPaymentPct": 0.35,
+    "interestRate": 0.072,
+    "loanTermYears": 25,
+    "closingCostPct": 0.02,
+    "rentableSqft": 30000,
+    "marketRentPerSqftAnnual": 28,
+    "currentOccupancy": 0.82,
+    "rentGrowthPct": 0.02,
+    "operatingExpensePerSqft": 11,
+    "managementPct": 0.04,
+    "annualRolloverPct": 0.15,
+    "tiLcPerSqft": 45,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": -123827.63068315096,
+    "monthlyCashFlow": -10318.969223595914,
+    "cashOnCash": -0.07437094935924983,
+    "capRate": 0.028610666666666666,
+    "dscr": 0.5097403880642418,
+    "irr5yr": -0.07669943443977718,
+    "totalCashInvested": 1665000,
+    "pricePerSqft": 150,
+    "goingInCapRate": 0.028610666666666666,
+    "tiLcDragAnnual": 202500
+  }
+}

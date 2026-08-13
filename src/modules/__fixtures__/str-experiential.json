@@ -1,0 +1,38 @@
+{
+  "id": "str-experiential",
+  "inputs": {
+    "landCost": 90000,
+    "buildCost": 160000,
+    "furnishingCost": 15000,
+    "financedPct": 0.6,
+    "interestRate": 0.085,
+    "loanTermYears": 20,
+    "adr": 260,
+    "occupancyPct": 0.5,
+    "noveltyDecayPct": 0.04,
+    "platformFeePct": 0.03,
+    "revenueGrowthPct": 0.02,
+    "propertyTaxPct": 0.009,
+    "insuranceAnnual": 2800,
+    "utilitiesMonthly": 260,
+    "suppliesPct": 0.05,
+    "managementPct": 0.2,
+    "maintenancePct": 0.07,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.02,
+    "holdYears": 5,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": 7051.681799420388,
+    "monthlyCashFlow": 587.6401499516991,
+    "cashOnCash": 0.06131897216887294,
+    "capRate": 0.09069,
+    "dscr": 1.4514284532905413,
+    "irr5yr": 0.06191227516492043,
+    "totalCashInvested": 115000,
+    "breakEvenOccupancy": 0.38568238956925693,
+    "revPAN": 130,
+    "buildCostRecoveryYears": 7.057007387804609
+  }
+}

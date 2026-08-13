@@ -1,0 +1,37 @@
+{
+  "id": "darksky-astro-str",
+  "inputs": {
+    "landCost": 70000,
+    "buildCost": 180000,
+    "financedPct": 0.6,
+    "interestRate": 0.085,
+    "loanTermYears": 20,
+    "furnishingCost": 20000,
+    "adr": 240,
+    "occupancy": 0.5,
+    "platformFeePct": 0.03,
+    "revGrowthPct": 0.03,
+    "propertyTaxPct": 0.009,
+    "insuranceAnnual": 2200,
+    "utilitiesMonthly": 180,
+    "suppliesPct": 0.05,
+    "managementPct": 0.18,
+    "maintenancePct": 0.06,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.02,
+    "holdYears": 5,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": 7553.181799420388,
+    "monthlyCashFlow": 629.4318166183657,
+    "cashOnCash": 0.06294318166183657,
+    "capRate": 0.092696,
+    "dscr": 1.4835330456083362,
+    "irr5yr": 0.08070316438893382,
+    "totalCashInvested": 120000,
+    "breakEvenOccupancy": 0.37320068158372977,
+    "revPAN": 120,
+    "skyQualityPremiumNote": 240
+  }
+}

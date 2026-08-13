@@ -1,0 +1,23 @@
+{
+  "id": "timber-mineral-rights",
+  "inputs": {
+    "acquisitionCost": 300000,
+    "residualLandValue": 120000,
+    "annualRoyaltyYear1": 48000,
+    "royaltyDeclinePct": 0.1,
+    "extractionYears": 12,
+    "discountRate": 0.1
+  },
+  "expected": {
+    "annualCashFlow": 48000,
+    "monthlyCashFlow": 4000,
+    "cashOnCash": 0.16,
+    "capRate": 0.16,
+    "dscr": null,
+    "irr5yr": 0.014998586392039786,
+    "totalCashInvested": 300000,
+    "npvAtDiscount": -46838.05542867707,
+    "royaltyYield": 0.16,
+    "reserveLifeYears": 12
+  }
+}

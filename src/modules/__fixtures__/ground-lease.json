@@ -1,0 +1,24 @@
+{
+  "id": "ground-lease",
+  "inputs": {
+    "landPurchasePrice": 1200000,
+    "annualGroundRent": 66000,
+    "rentEscalationPct": 0.02,
+    "leaseTermYears": 75,
+    "landAppreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.04
+  },
+  "expected": {
+    "annualCashFlow": 66000,
+    "monthlyCashFlow": 5500,
+    "cashOnCash": 0.055,
+    "capRate": 0.055,
+    "dscr": null,
+    "irr5yr": 0.07645934130364805,
+    "totalCashInvested": 1200000,
+    "currentYield": 0.055,
+    "npvOfLease": 885513.0537493026,
+    "reversionYearsAway": 75
+  }
+}

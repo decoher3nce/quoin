@@ -1,0 +1,33 @@
+{
+  "id": "self-storage",
+  "inputs": {
+    "purchasePrice": 2600000,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.072,
+    "loanTermYears": 25,
+    "closingCostPct": 0.02,
+    "numberOfUnits": 380,
+    "avgMonthlyRentPerUnit": 105,
+    "physicalOccupancy": 0.86,
+    "economicOccupancyFactor": 0.92,
+    "otherIncomeAnnual": 22000,
+    "rentGrowthPct": 0.03,
+    "expenseRatioOfEgi": 0.36,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.02,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 96430.92419715054,
+    "monthlyCashFlow": 8035.910349762545,
+    "cashOnCash": 0.11590255312157517,
+    "capRate": 0.09753426707692309,
+    "dscr": 1.6135915433011456,
+    "irr5yr": 0.16394494327834702,
+    "totalCashInvested": 832000,
+    "economicOccupancy": 0.7912,
+    "expenseRatio": 0.36,
+    "revenuePerUnitAnnual": 1317.8947368421052
+  }
+}

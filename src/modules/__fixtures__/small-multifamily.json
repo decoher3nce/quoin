@@ -1,0 +1,36 @@
+{
+  "id": "small-multifamily",
+  "inputs": {
+    "purchasePrice": 640000,
+    "units": 3,
+    "downPaymentPct": 0.25,
+    "ownerOccupied": 0,
+    "ownerOccDownPaymentPct": 0.05,
+    "interestRate": 0.075,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "avgUnitRentMonthly": 1450,
+    "vacancyPct": 0.06,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 2600,
+    "maintenancePct": 0.09,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -9470.195692639918,
+    "monthlyCashFlow": -789.1829743866598,
+    "cashOnCash": -0.052847074177678116,
+    "capRate": 0.048132125000000005,
+    "dscr": 0.7648602572561212,
+    "irr5yr": 0.04060269205012512,
+    "totalCashInvested": 179200,
+    "pricePerUnit": 213333.33333333334,
+    "grm": 12.260536398467433,
+    "opexRatio": 0.37220673351267625
+  }
+}

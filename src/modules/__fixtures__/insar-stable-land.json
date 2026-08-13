@@ -1,0 +1,26 @@
+{
+  "id": "insar-stable-land",
+  "inputs": {
+    "marketComparablePrice": 120000,
+    "discountVsComps": 0.3,
+    "acres": 10,
+    "closingCostPct": 0.02,
+    "annualCarryCost": 800,
+    "appreciationPct": 0.03,
+    "discountCaptureAtExitPct": 0.2,
+    "holdYears": 5,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": -800,
+    "monthlyCashFlow": -66.66666666666667,
+    "cashOnCash": -0.009337068160597572,
+    "capRate": -0.009523809523809525,
+    "dscr": null,
+    "irr5yr": 0.0020141505974544086,
+    "totalCashInvested": 85680,
+    "pricePerAcre": 8400,
+    "discountCapturedValue": 24000,
+    "breakEvenAppreciation": 0.027984752321699835
+  }
+}

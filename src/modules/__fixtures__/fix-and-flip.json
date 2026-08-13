@@ -1,0 +1,27 @@
+{
+  "id": "fix-and-flip",
+  "inputs": {
+    "purchasePrice": 320000,
+    "buyClosingCostPct": 0.02,
+    "rehabBudget": 65000,
+    "holdingMonths": 7,
+    "monthlyCarry": 1400,
+    "financedPct": 0.85,
+    "interestRate": 0.11,
+    "afterRepairValue": 470000,
+    "sellingCostPct": 0.07
+  },
+  "expected": {
+    "annualCashFlow": null,
+    "monthlyCashFlow": null,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": 0.2839096115881965,
+    "totalCashInvested": 94948.54166666667,
+    "profit": 14901.45833333327,
+    "roi": 0.15694246664311523,
+    "annualizedRoi": 0.2839096115881965,
+    "marginOfSafety": 0.034091645695111576
+  }
+}

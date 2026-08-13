@@ -1,0 +1,23 @@
+{
+  "id": "tax-lien-deed",
+  "inputs": {
+    "lienAmount": 8000,
+    "statutoryInterestRate": 0.16,
+    "redemptionPeriodMonths": 24,
+    "redemptionProbability": 0.95,
+    "collateralPropertyValue": 140000,
+    "deedAcquisitionCost": 3500
+  },
+  "expected": {
+    "annualCashFlow": 0,
+    "monthlyCashFlow": 0,
+    "cashOnCash": 0,
+    "capRate": 0.16,
+    "dscr": null,
+    "irr5yr": 0.4515939514891899,
+    "totalCashInvested": 8000,
+    "statutoryYield": 0.16,
+    "redemptionProbability": 0.95,
+    "deedUpsideMultiple": 17.5
+  }
+}

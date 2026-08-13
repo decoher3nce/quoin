@@ -1,0 +1,38 @@
+{
+  "id": "brrrr",
+  "inputs": {
+    "purchasePrice": 240000,
+    "buyClosingCostPct": 0.02,
+    "rehabBudget": 60000,
+    "rehabHoldingMonths": 5,
+    "monthlyCarryDuringRehab": 1100,
+    "afterRepairValue": 360000,
+    "refiLtv": 0.75,
+    "refiRate": 0.075,
+    "refiTermYears": 30,
+    "refiClosingCostPct": 0.03,
+    "monthlyRent": 2600,
+    "vacancyPct": 0.06,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 1600,
+    "maintenancePct": 0.08,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -3728.790077109952,
+    "monthlyCashFlow": -310.73250642582934,
+    "cashOnCash": -0.07704111729566017,
+    "capRate": 0.05257155555555556,
+    "dscr": 0.8354065711118446,
+    "irr5yr": 0.19239463811413496,
+    "totalCashInvested": 48400,
+    "cashLeftIn": 48400,
+    "refiCashOut": 261900,
+    "equityAfterRefi": 90000
+  }
+}

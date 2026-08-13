@@ -1,0 +1,35 @@
+{
+  "id": "mid-term-rental",
+  "inputs": {
+    "purchasePrice": 420000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "furnishingCost": 18000,
+    "monthlyRentFurnished": 3400,
+    "occupancyPct": 0.85,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 1600,
+    "hoaMonthly": 0,
+    "utilitiesMonthly": 260,
+    "managementPct": 0.1,
+    "maintenancePct": 0.06,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -5357.234317773091,
+    "monthlyCashFlow": -446.4361931477576,
+    "cashOnCash": -0.039507627712190935,
+    "capRate": 0.04712190476190476,
+    "dscr": 0.7869754335367516,
+    "irr5yr": 0.021316795311016164,
+    "totalCashInvested": 135600,
+    "breakEvenOccupancy": 1.0063151936791868,
+    "effectiveMonthlyRent": 2890
+  }
+}

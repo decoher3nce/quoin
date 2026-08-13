@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* Quoin design tokens — a quoin is the dressed cornerstone that squares a wall.
+   Palette: warm stone neutrals + a single structural accent (slate blue). */
+@theme {
+  --color-stone-50: #faf9f7;
+  --color-stone-100: #f2f0ec;
+  --color-stone-200: #e4e0d8;
+  --color-stone-300: #cfc8bb;
+  --color-stone-400: #a89e8c;
+  --color-stone-500: #837a68;
+  --color-stone-600: #635c4e;
+  --color-stone-700: #474136;
+  --color-accent-500: #3f5c78;
+  --color-accent-600: #33495f;
+  --color-accent-700: #263644;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Menlo', 'Cascadia Code', monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-stone-100);
+  color: #2b2620;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numeric columns read better tabular */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+/* Print: only the export target, laid out for paper */
+@media print {
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

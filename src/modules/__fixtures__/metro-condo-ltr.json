@@ -1,0 +1,34 @@
+{
+  "id": "metro-condo-ltr",
+  "inputs": {
+    "purchasePrice": 420000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "monthlyRent": 2600,
+    "otherMonthlyIncome": 0,
+    "vacancyPct": 0.05,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 1400,
+    "hoaMonthly": 350,
+    "maintenancePct": 0.08,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -10595.634317773092,
+    "monthlyCashFlow": -882.9695264810911,
+    "cashOnCash": -0.09009893127358072,
+    "capRate": 0.03464952380952381,
+    "dscr": 0.5786761838177391,
+    "irr5yr": 0.009061950863322451,
+    "totalCashInvested": 117600,
+    "grm": 13.461538461538462,
+    "opexRatio": 0.5090148448043185
+  }
+}

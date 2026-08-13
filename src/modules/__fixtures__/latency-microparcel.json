@@ -1,0 +1,26 @@
+{
+  "id": "latency-microparcel",
+  "inputs": {
+    "parcelCost": 60000,
+    "fiberDistanceMeters": 400,
+    "buildoutCost": 90000,
+    "annualLease": 28000,
+    "escalationPct": 0.03,
+    "leaseTermYears": 10,
+    "appreciationPct": 0.02,
+    "discountRate": 0.11,
+    "holdYears": 5
+  },
+  "expected": {
+    "annualCashFlow": 28000,
+    "monthlyCashFlow": 2333.3333333333335,
+    "cashOnCash": 0.18666666666666668,
+    "capRate": 0.18666666666666668,
+    "dscr": null,
+    "irr5yr": 0.10679502239530449,
+    "totalCashInvested": 150000,
+    "yieldOnCost": 0.18666666666666668,
+    "npvOfLease": 55361.11363225506,
+    "fiberProximityMeters": 400
+  }
+}

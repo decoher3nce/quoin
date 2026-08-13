@@ -1,0 +1,32 @@
+{
+  "id": "boutique-motel-conversion",
+  "inputs": {
+    "purchasePrice": 1400000,
+    "renovationBudget": 600000,
+    "rooms": 24,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.085,
+    "loanTermYears": 20,
+    "closingCostPct": 0.03,
+    "adr": 135,
+    "stabilizedOccupancy": 0.62,
+    "opexRatioOfRevenue": 0.5,
+    "fixedOpexAnnual": 90000,
+    "revGrowthPct": 0.03,
+    "appreciationPct": 0.02,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": 174549.9877562132,
+    "monthlyCashFlow": 14545.832313017767,
+    "cashOnCash": 0.16435968715274313,
+    "capRate": 0.138303,
+    "dscr": 2.7103351769149677,
+    "irr5yr": 0.1966818039184876,
+    "totalCashInvested": 1062000,
+    "revPAR": 83.7,
+    "pricePerRoom": 83333.33333333333,
+    "grossOperatingMarginPct": 0.5
+  }
+}

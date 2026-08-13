@@ -1,0 +1,35 @@
+{
+  "id": "mountain-second-home",
+  "inputs": {
+    "purchasePrice": 750000,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "personalUseNights": 60,
+    "rentalAdr": 250,
+    "rentalOccupancyOfAvailable": 0.45,
+    "mgmtPct": 0.2,
+    "maintenancePct": 0.08,
+    "utilitiesMonthly": 300,
+    "insuranceAnnual": 2400,
+    "propertyTaxPct": 0.009,
+    "hoaMonthly": 150,
+    "opportunityCostRate": 0.05,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -31759.057196288486,
+    "monthlyCashFlow": -2646.588099690707,
+    "cashOnCash": -0.12831942301530702,
+    "capRate": 0.01354,
+    "dscr": 0.24228148452541673,
+    "irr5yr": -0.0610909530792841,
+    "totalCashInvested": 247500,
+    "netAnnualCarryCost": 31759.057196288486,
+    "opportunityCostAnnual": 12375,
+    "rentalOffset": 10155
+  }
+}

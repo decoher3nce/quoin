@@ -1,0 +1,23 @@
+{
+  "id": "conservation-easement",
+  "inputs": {
+    "landBasis": 200000,
+    "retainedAgIncomeAnnual": 3000,
+    "appraisedValueBefore": 500000,
+    "appraisedValueAfterEasement": 180000,
+    "marginalTaxRate": 0.37,
+    "holdYears": 5
+  },
+  "expected": {
+    "annualCashFlow": 3000,
+    "monthlyCashFlow": 250,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": null,
+    "totalCashInvested": 200000,
+    "donationValue": 320000,
+    "estimatedTaxBenefit": 118400,
+    "benefitVsBasis": 0.592
+  }
+}

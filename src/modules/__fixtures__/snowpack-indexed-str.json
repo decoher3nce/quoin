@@ -1,0 +1,39 @@
+{
+  "id": "snowpack-indexed-str",
+  "inputs": {
+    "purchasePrice": 620000,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.075,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "furnishingCost": 40000,
+    "adr": 320,
+    "baseOccupancy": 0.5,
+    "snowIndexFactor": 1,
+    "platformFeePct": 0.03,
+    "revGrowthPct": 0.03,
+    "propertyTaxPct": 0.01,
+    "insuranceAnnual": 3000,
+    "hoaMonthly": 250,
+    "utilitiesMonthly": 300,
+    "suppliesPct": 0.05,
+    "managementPct": 0.2,
+    "maintenancePct": 0.06,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -13671.091605428606,
+    "monthlyCashFlow": -1139.2576337857172,
+    "cashOnCash": -0.05589162553323224,
+    "capRate": 0.036683870967741936,
+    "dscr": 0.6245762126988422,
+    "irr5yr": -0.03217592617836049,
+    "totalCashInvested": 244600,
+    "breakEvenOccupancy": 0.6773439654087356,
+    "effectiveOccupancy": 0.5,
+    "revPAN": 160
+  }
+}

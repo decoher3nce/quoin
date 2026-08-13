@@ -1,0 +1,31 @@
+{
+  "id": "event-venue",
+  "inputs": {
+    "purchasePrice": 1100000,
+    "renovationBudget": 250000,
+    "downPaymentPct": 0.3,
+    "interestRate": 0.08,
+    "loanTermYears": 20,
+    "closingCostPct": 0.03,
+    "eventsPerYear": 45,
+    "avgRevenuePerEvent": 6500,
+    "variableCostPerEvent": 1800,
+    "fixedOpexAnnual": 120000,
+    "revGrowthPct": 0.03,
+    "appreciationPct": 0.02,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": 14212.937625003702,
+    "monthlyCashFlow": 1184.4114687503086,
+    "cashOnCash": 0.023185868882550902,
+    "capRate": 0.06777777777777778,
+    "dscr": 1.1838980184813162,
+    "irr5yr": 0.06455929649274478,
+    "totalCashInvested": 613000,
+    "revenuePerEvent": 6500,
+    "breakEvenEvents": 41.97597071808432,
+    "grossMarginPerEvent": 0.7230769230769231
+  }
+}

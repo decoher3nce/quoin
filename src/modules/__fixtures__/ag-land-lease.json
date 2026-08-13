@@ -1,0 +1,31 @@
+{
+  "id": "ag-land-lease",
+  "inputs": {
+    "purchasePrice": 600000,
+    "acres": 160,
+    "closingCostPct": 0.02,
+    "cashRentPerAcreAnnual": 220,
+    "leaseEscalationPct": 0.02,
+    "managementPct": 0.05,
+    "financedPct": 0.5,
+    "interestRate": 0.075,
+    "loanTermYears": 20,
+    "propertyTaxPct": 0.007,
+    "insuranceAnnual": 1200,
+    "appreciationPct": 0.04,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -961.3549678648778,
+    "monthlyCashFlow": -80.11291398873982,
+    "cashOnCash": -0.003081265922643839,
+    "capRate": 0.046733333333333335,
+    "dscr": 0.9668513774983923,
+    "irr5yr": 0.0639835071456359,
+    "totalCashInvested": 312000,
+    "yieldOnCost": 0.046733333333333335,
+    "rentPerAcre": 220,
+    "pricePerAcre": 3750
+  }
+}

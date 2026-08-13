@@ -1,0 +1,32 @@
+{
+  "id": "sfr-ltr",
+  "inputs": {
+    "purchasePrice": 380000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "monthlyRent": 2500,
+    "vacancyPct": 0.05,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 1800,
+    "maintenancePct": 0.1,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -5513.345335128037,
+    "monthlyCashFlow": -459.44544459400305,
+    "cashOnCash": -0.05181715540533869,
+    "capRate": 0.04536842105263158,
+    "dscr": 0.7576907811170874,
+    "irr5yr": 0.043032083607844135,
+    "totalCashInvested": 106400,
+    "grm": 12.666666666666666,
+    "opexRatio": 0.3950877192982456
+  }
+}

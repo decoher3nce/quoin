@@ -1,0 +1,33 @@
+{
+  "id": "townhome-ltr",
+  "inputs": {
+    "purchasePrice": 450000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.07,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "monthlyRent": 2850,
+    "vacancyPct": 0.05,
+    "rentGrowthPct": 0.03,
+    "propertyTaxPct": 0.011,
+    "insuranceAnnual": 1600,
+    "hoaMonthly": 200,
+    "maintenancePct": 0.09,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.035,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -9081.951054756886,
+    "monthlyCashFlow": -756.8292545630738,
+    "cashOnCash": -0.07207897662505465,
+    "capRate": 0.03969511111111111,
+    "dscr": 0.6629417345032943,
+    "irr5yr": 0.02500984723462563,
+    "totalCashInvested": 126000,
+    "grm": 13.157894736842104,
+    "opexRatio": 0.45020621729763005
+  }
+}

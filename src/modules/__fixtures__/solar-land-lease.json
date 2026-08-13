@@ -1,0 +1,26 @@
+{
+  "id": "solar-land-lease",
+  "inputs": {
+    "landPurchasePrice": 2400000,
+    "acres": 300,
+    "leaseRatePerAcreAnnual": 1000,
+    "escalationPct": 0.02,
+    "leaseTermYears": 25,
+    "landAppreciationPct": 0.02,
+    "discountRate": 0.07,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 300000,
+    "monthlyCashFlow": 25000,
+    "cashOnCash": 0.125,
+    "capRate": 0.125,
+    "dscr": null,
+    "irr5yr": 0.13688537467470843,
+    "totalCashInvested": 2400000,
+    "yieldOnLandValue": 0.125,
+    "leaseRatePerAcre": 1000,
+    "npvOfLease": 2219786.6124586985
+  }
+}

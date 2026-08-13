@@ -1,0 +1,29 @@
+{
+  "id": "frostpocket-cropland",
+  "inputs": {
+    "landCost": 180000,
+    "acres": 20,
+    "establishmentCostPerAcre": 9000,
+    "yearsToMaturity": 4,
+    "matureAnnualRevenuePerAcre": 6000,
+    "opexPerAcreAnnual": 2200,
+    "financedPct": 0.5,
+    "interestRate": 0.075,
+    "loanTermYears": 20,
+    "appreciationPct": 0.03,
+    "holdYears": 8,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -61400.812980718925,
+    "monthlyCashFlow": -5116.73441505991,
+    "cashOnCash": -0.34111562767066067,
+    "capRate": -0.12222222222222222,
+    "dscr": -2.528617487513627,
+    "irr5yr": -0.008096529932645511,
+    "totalCashInvested": 180000,
+    "yieldOnCostAtMaturity": 0.2111111111111111,
+    "yearsToPositiveCashFlow": 4,
+    "revenuePerAcreMature": 6000
+  }
+}

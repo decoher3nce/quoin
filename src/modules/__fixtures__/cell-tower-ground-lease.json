@@ -1,0 +1,27 @@
+{
+  "id": "cell-tower-ground-lease",
+  "inputs": {
+    "acquisitionCost": 350000,
+    "monthlyRent": 2200,
+    "colocationTenants": 1,
+    "escalationPct": 0.03,
+    "leaseTermYears": 30,
+    "appreciationPct": 0.03,
+    "discountRate": 0.08,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 26400,
+    "monthlyCashFlow": 2200,
+    "cashOnCash": 0.07542857142857143,
+    "capRate": 0.07542857142857143,
+    "dscr": null,
+    "irr5yr": 0.09637327797959629,
+    "totalCashInvested": 350000,
+    "currentYield": 0.07542857142857143,
+    "escalation": 0.03,
+    "leaseBuyoutEstimate": 440000,
+    "npvOfLease": 86106.92877974306
+  }
+}

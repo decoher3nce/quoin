@@ -1,0 +1,24 @@
+{
+  "id": "viewshed-easement",
+  "inputs": {
+    "controllingParcelCost": 150000,
+    "residualParcelValue": 140000,
+    "easementValueToNeighbor": 120000,
+    "negotiationProbability": 0.5,
+    "annualCarryCost": 1200,
+    "yearsToClose": 3,
+    "holdYears": 5
+  },
+  "expected": {
+    "annualCashFlow": -1200,
+    "monthlyCashFlow": -100,
+    "cashOnCash": -0.008,
+    "capRate": -0.008,
+    "dscr": null,
+    "irr5yr": 0.09335472883626227,
+    "totalCashInvested": 150000,
+    "expectedEasementValue": 60000,
+    "probabilityWeightedMultiple": 1.3333333333333333,
+    "negotiationProbability": 0.5
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "str-cohosting",
+  "inputs": {
+    "numberOfProperties": 6,
+    "avgPropertyAnnualRevenue": 55000,
+    "cohostFeePct": 0.2,
+    "setupCostPerProperty": 800,
+    "monthlyToolsCost": 250,
+    "hoursPerWeek": 25,
+    "hourlyOpportunityValue": 40
+  },
+  "expected": {
+    "annualCashFlow": 63000,
+    "monthlyCashFlow": 5250,
+    "cashOnCash": null,
+    "capRate": null,
+    "dscr": null,
+    "irr5yr": null,
+    "totalCashInvested": 4800,
+    "annualRevenueShare": 66000,
+    "effectiveHourlyRate": 48.46153846153846,
+    "roicOnSetup": 13.125
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "str-mountain",
+  "inputs": {
+    "purchasePrice": 620000,
+    "downPaymentPct": 0.25,
+    "interestRate": 0.075,
+    "loanTermYears": 30,
+    "closingCostPct": 0.03,
+    "furnishingCost": 45000,
+    "reserveCash": 12000,
+    "adr": 340,
+    "occupancyPct": 0.55,
+    "platformFeePct": 0.03,
+    "revenueGrowthPct": 0.03,
+    "propertyTaxPct": 0.006,
+    "insuranceAnnual": 3200,
+    "hoaMonthly": 250,
+    "utilitiesMonthly": 420,
+    "suppliesPct": 0.04,
+    "managementPct": 0.22,
+    "maintenancePct": 0.07,
+    "expenseGrowthPct": 0.03,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0.06
+  },
+  "expected": {
+    "annualCashFlow": -10292.969577244941,
+    "monthlyCashFlow": -857.7474647704117,
+    "cashOnCash": -0.04463560094208561,
+    "capRate": 0.046327741935483856,
+    "dscr": 0.7361870811826688,
+    "irr5yr": -0.03200734074673461,
+    "totalCashInvested": 230600,
+    "breakEvenOccupancy": 0.679595205192951,
+    "revPAN": 187.00000000000003
+  }
+}

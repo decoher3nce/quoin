@@ -1,0 +1,27 @@
+{
+  "id": "billboard-easement",
+  "inputs": {
+    "easementAcquisitionCost": 200000,
+    "annualAdRevenueGross": 36000,
+    "boardOccupancy": 0.85,
+    "operatingCostPct": 0.15,
+    "escalationPct": 0.02,
+    "permitTermYears": 20,
+    "appreciationPct": 0.02,
+    "discountRate": 0.09,
+    "holdYears": 5,
+    "sellingCostPct": 0.05
+  },
+  "expected": {
+    "annualCashFlow": 26010,
+    "monthlyCashFlow": 2167.5,
+    "cashOnCash": 0.13005,
+    "capRate": 0.13005,
+    "dscr": null,
+    "irr5yr": 0.14201609768495535,
+    "totalCashInvested": 200000,
+    "currentYield": 0.13005,
+    "effectiveOccupancy": 0.85,
+    "npvOfIncome": 107393.20187190478
+  }
+}

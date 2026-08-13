@@ -1,0 +1,34 @@
+{
+  "id": "adu-build",
+  "inputs": {
+    "aduBuildCost": 150000,
+    "softCostsPct": 0.15,
+    "propertyValueLift": 200000,
+    "financedPct": 0.6,
+    "interestRate": 0.08,
+    "loanTermYears": 20,
+    "incrementalMonthlyRent": 1500,
+    "vacancyPct": 0.05,
+    "rentGrowthPct": 0.03,
+    "incrementalPropertyTaxAnnual": 1200,
+    "incrementalInsuranceAnnual": 500,
+    "maintenancePct": 0.1,
+    "managementPct": 0.08,
+    "expenseGrowthPct": 0.025,
+    "appreciationPct": 0.03,
+    "holdYears": 5,
+    "sellingCostPct": 0
+  },
+  "expected": {
+    "annualCashFlow": 1843.414343101149,
+    "monthlyCashFlow": 153.61786192509575,
+    "cashOnCash": 0.02671614990001665,
+    "capRate": 0.06116,
+    "dscr": 1.177446132128388,
+    "irr5yr": 0.18190404323825826,
+    "totalCashInvested": 69000,
+    "yieldOnCost": 0.07091014492753624,
+    "valueLiftVsCost": 1.1594202898550725,
+    "paybackYears": 14.102354480052322
+  }
+}
