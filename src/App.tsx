@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { MODULES, getModule } from './modules';
 import { TabNav, type Selection } from './components/TabNav';
+import { MenuBar, type MenuItem } from './components/MenuBar';
 import { ModuleView } from './components/ModuleView';
 import { ComparisonView } from './components/ComparisonView';
 import { GlossaryView } from './components/GlossaryView';
 import { SavedView } from './components/SavedView';
+import { AboutView } from './components/AboutView';
 import { AssumptionsPanel } from './components/AssumptionsPanel';
 import { useModuleInputs } from './state/useModuleState';
 import { useTaxSettings } from './state/useTaxSettings';
@@ -21,7 +23,7 @@ function loadSelection(): Selection {
     const raw = localStorage.getItem(SELECTION_KEY);
     if (raw) {
       const s = JSON.parse(raw) as Selection;
-      if (s.kind === 'compare' || s.kind === 'glossary' || s.kind === 'saved') return s;
+      if (s.kind === 'compare' || s.kind === 'glossary' || s.kind === 'saved' || s.kind === 'about') return s;
       if (s.kind === 'module' && getModule(s.id)) return s;
     }
   } catch {
@@ -62,6 +64,9 @@ function ModuleTab({
 
 export default function App() {
   const [selection, setSelection] = useState<Selection>(() => loadSelection());
+  const [lastModuleId, setLastModuleId] = useState<string>(() =>
+    selection.kind === 'module' ? selection.id : MODULES[0]!.id,
+  );
   const [loadNonce, setLoadNonce] = useState(0);
   const { tax, setEnabled: setTaxEnabled, setField: setTaxField } = useTaxSettings();
   const { scenarios, save, rename, remove } = useSavedScenarios();
@@ -72,7 +77,30 @@ export default function App() {
     } catch {
       /* ignore */
     }
+    if (selection.kind === 'module') setLastModuleId(selection.id);
   }, [selection]);
+
+  // Top-level menu: "Model" returns to the last-viewed module; the rest are their own views.
+  const onMenu = (item: MenuItem) => {
+    switch (item) {
+      case 'model':
+        setSelection({ kind: 'module', id: lastModuleId });
+        break;
+      case 'compare':
+        setSelection({ kind: 'compare' });
+        break;
+      case 'saved':
+        setSelection({ kind: 'saved' });
+        break;
+      case 'glossary':
+        setSelection({ kind: 'glossary' });
+        break;
+      case 'about':
+        setSelection({ kind: 'about' });
+        break;
+    }
+  };
+  const activeMenu: MenuItem = selection.kind === 'module' ? 'model' : selection.kind;
 
   // Load a saved scenario: seed the module's inputs + tax, then remount the tab.
   const loadScenario = (s: SavedScenario) => {
@@ -90,39 +118,38 @@ export default function App() {
     setLoadNonce((n) => n + 1); // force a remount even if already on this module
   };
 
+  const showAssumptions = selection.kind === 'module' || selection.kind === 'compare';
+
   return (
     <div className="flex h-full flex-col">
-      <header className="no-print flex items-center justify-between border-b border-stone-200 bg-white px-5 py-3">
-        <div className="flex items-baseline gap-3">
+      <header className="no-print flex items-center justify-between gap-4 border-b border-stone-200 bg-white px-5 py-2.5">
+        <div className="flex items-center gap-5">
           <span className="text-xl font-bold tracking-tight text-accent-700">Quoin</span>
-          <span className="hidden text-sm text-stone-400 sm:inline">
-            Model &amp; compare real-estate investments on the same footing
-          </span>
+          <MenuBar active={activeMenu} onSelect={onMenu} savedCount={scenarios.length} />
         </div>
-        <span className="rounded-full bg-stone-100 px-2.5 py-0.5 text-[11px] font-medium text-stone-500">
+        <span className="hidden rounded-full bg-stone-100 px-2.5 py-0.5 text-[11px] font-medium text-stone-500 sm:inline">
           v2 · {MODULES.length} modules
         </span>
       </header>
 
       <div className="flex min-h-0 flex-1">
-        <aside className="no-print w-64 shrink-0 border-r border-stone-200 bg-stone-100">
-          <TabNav selection={selection} onSelect={setSelection} savedCount={scenarios.length} />
-        </aside>
+        {selection.kind === 'module' && (
+          <aside className="no-print w-64 shrink-0 border-r border-stone-200 bg-stone-100">
+            <TabNav selection={selection} onSelect={setSelection} />
+          </aside>
+        )}
 
         <main className="min-w-0 flex-1 overflow-y-auto">
           <div className="mx-auto max-w-6xl space-y-4 p-5">
-            {selection.kind !== 'glossary' && selection.kind !== 'saved' && <AssumptionsPanel />}
+            {showAssumptions && <AssumptionsPanel />}
             {selection.kind === 'compare' ? (
               <ComparisonView tax={tax} setTaxEnabled={setTaxEnabled} />
             ) : selection.kind === 'glossary' ? (
               <GlossaryView />
             ) : selection.kind === 'saved' ? (
-              <SavedView
-                scenarios={scenarios}
-                onLoad={loadScenario}
-                onRename={rename}
-                onRemove={remove}
-              />
+              <SavedView scenarios={scenarios} onLoad={loadScenario} onRename={rename} onRemove={remove} />
+            ) : selection.kind === 'about' ? (
+              <AboutView />
             ) : (
               <ModuleTab
                 key={`${selection.id}:${loadNonce}`}

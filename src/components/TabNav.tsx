@@ -28,7 +28,8 @@ export type Selection =
   | { kind: 'module'; id: string }
   | { kind: 'compare' }
   | { kind: 'glossary' }
-  | { kind: 'saved' };
+  | { kind: 'saved' }
+  | { kind: 'about' };
 
 const COLLAPSE_KEY = 'quoin:nav:collapsed';
 
@@ -45,11 +46,9 @@ function loadCollapsed(): Set<string> {
 export function TabNav({
   selection,
   onSelect,
-  savedCount,
 }: {
   selection: Selection;
   onSelect: (s: Selection) => void;
-  savedCount: number;
 }) {
   const [query, setQuery] = useState('');
   const [collapsed, setCollapsed] = useState<Set<string>>(() => loadCollapsed());
@@ -86,11 +85,6 @@ export function TabNav({
     return CATEGORY_ORDER.filter((c) => byCat.has(c)).map((c) => [c, byCat.get(c)!] as const);
   }, [query]);
 
-  const navBtn = (active: boolean) =>
-    `mb-1 flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition ${
-      active ? 'bg-accent-500 text-white' : 'text-stone-600 hover:bg-stone-200/60'
-    }`;
-
   return (
     <nav className="flex h-full flex-col">
       <div className="p-3">
@@ -104,28 +98,6 @@ export function TabNav({
       </div>
 
       <div className="flex-1 overflow-y-auto px-2 pb-4">
-        <button onClick={() => onSelect({ kind: 'compare' })} className={navBtn(selection.kind === 'compare')}>
-          <span aria-hidden>⊞</span> Compare
-        </button>
-        <button onClick={() => onSelect({ kind: 'saved' })} className={navBtn(selection.kind === 'saved')}>
-          <span aria-hidden>★</span> Saved
-          {savedCount > 0 && (
-            <span
-              className={`ml-auto rounded-full px-1.5 text-[10px] ${
-                selection.kind === 'saved' ? 'bg-white/25 text-white' : 'bg-stone-300/60 text-stone-600'
-              }`}
-            >
-              {savedCount}
-            </span>
-          )}
-        </button>
-        <button
-          onClick={() => onSelect({ kind: 'glossary' })}
-          className={`${navBtn(selection.kind === 'glossary')} mb-3`}
-        >
-          <span aria-hidden>📖</span> Glossary
-        </button>
-
         {grouped.map(([cat, mods]) => {
           const isCollapsed = !searching && collapsed.has(cat);
           return (

@@ -23,3 +23,6 @@ coverage/
 
 # Stray non-project state file
 data/queue-state.json
+
+# TypeScript incremental build cache
+*.tsbuildinfo
