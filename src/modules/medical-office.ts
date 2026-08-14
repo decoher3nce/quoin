@@ -53,7 +53,6 @@ function compute(i: Record<string, number>): ComputeResult {
     metrics: {
       ...core,
       pricePerSqft: guardDiv(price, sqft),
-      goingInCapRate: guardDiv(noi, price),
       tiLcDragAnnual,
     },
     projection,
@@ -91,7 +90,6 @@ export const medicalOffice: InvestmentModule = {
   ],
   metrics: [
     { key: 'pricePerSqft', label: 'Price per sqft', unit: '$', higherIsBetter: false, help: 'Purchase price / rentable area.' },
-    { key: 'goingInCapRate', label: 'Going-in cap rate', unit: '%', higherIsBetter: true, help: 'Year-1 NOI / price.' },
     { key: 'tiLcDragAnnual', label: 'TI/LC drag (annual)', unit: '$/yr', higherIsBetter: false, help: 'Recurring tenant-improvement and leasing-commission cost from rollover. High per-sqft in medical.' },
   ],
   compute,

@@ -1,5 +1,5 @@
 import type { InvestmentModule, ComputeResult } from '../core/types';
-import { guardDiv, dscr } from '../core/finance';
+import { dscr } from '../core/finance';
 import { computeHold } from './_shapes';
 
 // NNN Retail — Single Tenant. A triple-net lease shifts taxes, insurance, and
@@ -44,7 +44,6 @@ function compute(i: Record<string, number>): ComputeResult {
   return {
     metrics: {
       ...core,
-      goingInCapRate: guardDiv(noi, price),
       leaseYearsRemaining: i.leaseYearsRemaining ?? 0,
       rentEscalation: escalation,
     },
@@ -78,7 +77,6 @@ export const nnnRetail: InvestmentModule = {
     { key: 'sellingCostPct', label: 'Selling costs', type: 'percent', unit: '%', default: 0.05, min: 0, max: 0.12, step: 0.005, group: 'Exit' },
   ],
   metrics: [
-    { key: 'goingInCapRate', label: 'Going-in cap rate', unit: '%', higherIsBetter: true, help: 'Year-1 NOI / price. The headline yield on a NNN deal.' },
     { key: 'leaseYearsRemaining', label: 'Lease years remaining', unit: 'yr', higherIsBetter: true, help: 'Remaining contractual term. Longer term = more durable income.' },
     { key: 'rentEscalation', label: 'Rent escalation', unit: '%', higherIsBetter: true, help: 'Contractual annual rent bump baked into the lease.' },
   ],

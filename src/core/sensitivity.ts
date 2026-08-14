@@ -83,6 +83,8 @@ export interface GridResult {
   ys: number[];
   cells: number[][]; // cells[yi][xi]
   base: number;
+  xBaseIndex: number; // column holding the current (base) x value; -1 if absent
+  yBaseIndex: number; // row holding the current (base) y value; -1 if absent
   min: number;
   max: number;
 }
@@ -93,7 +95,10 @@ function axisValues(base: number, pct: number, steps: number, spec: ParamSpec): 
   const out: number[] = [];
   for (let i = 0; i < steps; i++) {
     const t = steps === 1 ? 0.5 : i / (steps - 1);
-    out.push(clampToSpec(lo + t * (hi - lo), spec));
+    const v = clampToSpec(lo + t * (hi - lo), spec);
+    // De-duplicate: integer params (or a tight clamp) can round adjacent steps to
+    // the same value; a grid with repeated identical rows/columns is misleading.
+    if (!out.includes(v)) out.push(v);
   }
   return out;
 }
@@ -137,6 +142,8 @@ export function grid(
     ys,
     cells,
     base,
+    xBaseIndex: xs.indexOf(clampToSpec(xbase, xspec)),
+    yBaseIndex: ys.indexOf(clampToSpec(ybase, yspec)),
     min: Number.isFinite(min) ? min : NaN,
     max: Number.isFinite(max) ? max : NaN,
   };

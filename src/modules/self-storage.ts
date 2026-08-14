@@ -31,9 +31,10 @@ function compute(i: Record<string, number>): ComputeResult {
   const grossRevenue = (y: number) =>
     (units * rentPerUnit * 12 + otherIncome) * Math.pow(1 + rentGrowth, y - 1);
   const effectiveRevenue = (y: number) => grossRevenue(y) * physicalOcc * econFactor;
-  // Expenses anchor at year-1 EGI × ratio, then drift up with expense inflation.
+  // Expenses anchor at year-1 EGI × ratio, then drift up with expense inflation
+  // only (effectiveRevenue(1), not (y) — otherwise opex compounds rent growth too).
   const operatingExpenses = (y: number) =>
-    effectiveRevenue(y) * expenseRatioOfEgi * Math.pow(1 + expenseGrowth, y - 1);
+    effectiveRevenue(1) * expenseRatioOfEgi * Math.pow(1 + expenseGrowth, y - 1);
 
   const { core, projection, debtService, noi } = computeHold({
     price, loanAmount, annualRate: rate, termYears: term, appreciation,

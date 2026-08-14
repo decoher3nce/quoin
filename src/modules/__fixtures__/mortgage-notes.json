@@ -6,7 +6,9 @@
     "noteRate": 0.06,
     "remainingTermMonths": 240,
     "performing": 1,
-    "collateralPropertyValue": 230000
+    "collateralPropertyValue": 230000,
+    "workoutMonths": 18,
+    "foreclosureCostPct": 0.15
   },
   "expected": {
     "annualCashFlow": 15474.91086312853,
@@ -16,8 +18,8 @@
     "dscr": null,
     "irr5yr": 0.1461793937970422,
     "totalCashInvested": 129600,
-    "yieldToMaturity": 0.1461793937970422,
     "discountToUpb": 0.28,
-    "collateralCoverage": 1.7746913580246915
+    "collateralCoverage": 1.7746913580246915,
+    "recoveryValue": 152819.2772040533
   }
 }

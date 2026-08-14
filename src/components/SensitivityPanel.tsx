@@ -128,7 +128,6 @@ function Heatmap({
   ySpec: ParamSpec;
 }) {
   const rows = g.ys.map((_, i) => i).reverse(); // highest y on top
-  const mid = (g.xs.length - 1) / 2;
   return (
     <div className="overflow-x-auto">
       <table className="border-separate text-right text-xs tnum" style={{ borderSpacing: 2 }}>
@@ -138,7 +137,7 @@ function Heatmap({
               {ySpec.label} \ {xSpec.label}
             </th>
             {g.xs.map((xv, xi) => (
-              <th key={xi} className={`px-2 py-1 font-medium ${xi === mid ? 'text-accent-600' : 'text-stone-500'}`}>
+              <th key={xi} className={`px-2 py-1 font-medium ${xi === g.xBaseIndex ? 'text-accent-600' : 'text-stone-500'}`}>
                 {formatParam(xv, xSpec.type, xSpec.unit)}
               </th>
             ))}
@@ -147,11 +146,11 @@ function Heatmap({
         <tbody>
           {rows.map((yi) => (
             <tr key={yi}>
-              <td className={`px-2 py-1 text-left font-medium ${yi === mid ? 'text-accent-600' : 'text-stone-500'}`}>
+              <td className={`px-2 py-1 text-left font-medium ${yi === g.yBaseIndex ? 'text-accent-600' : 'text-stone-500'}`}>
                 {formatParam(g.ys[yi]!, ySpec.type, ySpec.unit)}
               </td>
               {g.cells[yi]!.map((v, xi) => {
-                const isBase = yi === mid && xi === mid;
+                const isBase = yi === g.yBaseIndex && xi === g.xBaseIndex;
                 return (
                   <td
                     key={xi}
