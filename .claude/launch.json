@@ -5,7 +5,8 @@
       "name": "quoin-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "port": 5174,
+      "url": "http://localhost:5174"
     }
   ]
 }

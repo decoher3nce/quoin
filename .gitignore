@@ -3,6 +3,11 @@ dist/
 dist-ssr/
 *.local
 
+# Per-deployment env (PUBLIC_HOST etc.) — never commit; only .env.example is tracked.
+.env
+.env.local
+.env.*.local
+
 # Editor / OS
 .DS_Store
 .vscode/*
